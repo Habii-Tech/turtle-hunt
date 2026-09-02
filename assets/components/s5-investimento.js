@@ -15,10 +15,10 @@ document.getElementById("slides-container").insertAdjacentHTML(
       <p class="text-[16px] text-[#5C6E64] leading-[1.78] mb-[18px]">Sem surpresas. Você sabe exatamente o que paga e o que recebe em cada etapa do projeto.</p>
       <div class="inv-box bg-[#0C1410] rounded-[20px] p-10 mt-7 relative overflow-hidden">
         <div class="text-[11px] font-bold tracking-[.1em] uppercase text-[#1DB954] mb-[22px]">Investimento total do projeto</div>
-        <div class="text-[clamp(26px,3vw,42px)] font-black text-white tracking-[-0.03em] leading-[1.15] mb-[10px]">Entrada de <em class="text-[#1DB954] not-italic">R$ 10.600</em><br>+ 4 parcelas de <em class="text-[#1DB954] not-italic">R$ 10.600</em></div>
-        <div class="text-[14px] text-white/30 mb-6">Valor total: <strong class="text-white/55 font-semibold">R$ 53.000,00</strong></div>
+        <div class="text-[clamp(26px,3vw,42px)] font-black text-white tracking-[-0.03em] leading-[1.15] mb-[10px]">Entrada de <em class="text-[#1DB954] not-italic">R$ 12.000</em><br>+ 4 parcelas de <em class="text-[#1DB954] not-italic">R$ 9.000</em></div>
+        <div class="text-[14px] text-white/30 mb-6">Valor total: <strong class="text-white/55 font-semibold">R$ 48.000,00</strong></div>
         <div class="h-px bg-white/[0.08] mb-[18px]"></div>
-        <div class="text-[12px] text-white/25 leading-[1.6]">* Não incluso domínio, hospedagem e manutenção.<br>* Após maio, este valor não contempla o site institucional.</div>
+        <div class="text-[12px] text-white/25 leading-[1.6]">* Não incluso domínio, hospedagem e manutenção.<br>* Após setembro, este valor não contempla o site institucional.</div>
       </div>
     </div>
     <!-- right -->
@@ -32,7 +32,7 @@ document.getElementById("slides-container").insertAdjacentHTML(
         <!-- badge -->
         <div class="inline-flex items-center gap-[6px] bg-[#1DB954] text-[#0C1410] text-[10px] font-black tracking-[.1em] uppercase px-3 py-[5px] rounded-full mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          Bônus exclusivo · Maio/2026
+          Bônus exclusivo · Setembro/2026
         </div>
 
         <div class="text-[11px] font-bold tracking-[.06em] uppercase text-[#1DB954]/70 mb-3">Site Institucional</div>
@@ -41,7 +41,7 @@ document.getElementById("slides-container").insertAdjacentHTML(
           <div class="text-[clamp(22px,2.4vw,34px)] font-black leading-none tracking-[-0.04em]" style="color:#1DB954;text-shadow:0 0 20px rgba(29,185,84,.45);">R$ 0</div>
         </div>
         <div class="h-px bg-white/[0.08] mb-3"></div>
-        <div class="text-[12px] text-white/55 leading-[1.65]">Site institucional completo <strong class="text-white font-semibold">incluso sem custo</strong> para contratos fechados <strong class="text-[#1DB954] font-semibold">até o fim de maio</strong>.</div>
+        <div class="text-[12px] text-white/55 leading-[1.65]">Site institucional completo <strong class="text-white font-semibold">incluso sem custo</strong> para contratos fechados <strong class="text-[#1DB954] font-semibold">até o fim de setembro</strong>.</div>
       </div>
 
       <!-- custos recorrentes — mais discretos -->

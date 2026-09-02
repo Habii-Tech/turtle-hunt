@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0C1410"/>
+
+  <!-- Nav -->
+  <rect width="800" height="56" fill="#111A14"/>
+  <rect x="28" y="18" width="90" height="20" rx="4" fill="#1DB954" opacity="0.9"/>
+  <rect x="150" y="22" width="50" height="12" rx="3" fill="#6EBF8B" opacity="0.4"/>
+  <rect x="216" y="22" width="50" height="12" rx="3" fill="#6EBF8B" opacity="0.4"/>
+  <rect x="282" y="22" width="50" height="12" rx="3" fill="#6EBF8B" opacity="0.4"/>
+  <rect x="680" y="16" width="92" height="24" rx="12" fill="#1DB954"/>
+
+  <!-- Hero section -->
+  <rect x="28" y="96" width="220" height="16" rx="4" fill="#1DB954" opacity="0.85"/>
+  <rect x="28" y="122" width="340" height="28" rx="5" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="28" y="160" width="300" height="28" rx="5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="28" y="198" width="240" height="14" rx="3" fill="#6EBF8B" opacity="0.5"/>
+  <rect x="28" y="216" width="200" height="14" rx="3" fill="#6EBF8B" opacity="0.5"/>
+
+  <!-- CTA buttons -->
+  <rect x="28" y="248" width="140" height="38" rx="10" fill="#1DB954"/>
+  <rect x="184" y="248" width="130" height="38" rx="10" fill="#1B2E1F" stroke="#1DB954" stroke-width="1.5"/>
+
+  <!-- Hero image placeholder -->
+  <rect x="440" y="72" width="332" height="230" rx="16" fill="#1B2E1F"/>
+  <circle cx="606" cy="187" r="60" fill="#1DB954" opacity="0.15"/>
+  <circle cx="606" cy="187" r="35" fill="#1DB954" opacity="0.25"/>
+  <!-- Turtle icon hint -->
+  <ellipse cx="606" cy="183" rx="22" ry="18" fill="#1DB954" opacity="0.7"/>
+  <ellipse cx="606" cy="183" rx="16" ry="12" fill="#158A3E" opacity="0.8"/>
+  <circle cx="600" cy="175" r="5" fill="#0C1410" opacity="0.5"/>
+  <circle cx="612" cy="175" r="5" fill="#0C1410" opacity="0.5"/>
+  <rect x="584" y="197" width="8" height="14" rx="4" fill="#1DB954" opacity="0.6"/>
+  <rect x="610" y="197" width="8" height="14" rx="4" fill="#1DB954" opacity="0.6"/>
+  <rect x="592" y="164" width="8" height="14" rx="4" fill="#1DB954" opacity="0.6"/>
+  <rect x="604" y="164" width="8" height="14" rx="4" fill="#1DB954" opacity="0.6"/>
+
+  <!-- Stats bar -->
+  <rect x="0" y="320" width="800" height="80" fill="#111A14"/>
+  <rect x="80" y="342" width="60" height="18" rx="4" fill="#1DB954" opacity="0.8"/>
+  <rect x="80" y="366" width="80" height="10" rx="3" fill="#6EBF8B" opacity="0.35"/>
+  <rect x="260" y="342" width="60" height="18" rx="4" fill="#1DB954" opacity="0.8"/>
+  <rect x="260" y="366" width="80" height="10" rx="3" fill="#6EBF8B" opacity="0.35"/>
+  <rect x="440" y="342" width="60" height="18" rx="4" fill="#1DB954" opacity="0.8"/>
+  <rect x="440" y="366" width="80" height="10" rx="3" fill="#6EBF8B" opacity="0.35"/>
+  <rect x="620" y="342" width="60" height="18" rx="4" fill="#1DB954" opacity="0.8"/>
+  <rect x="620" y="366" width="80" height="10" rx="3" fill="#6EBF8B" opacity="0.35"/>
+
+  <!-- Feature cards -->
+  <rect x="28" y="420" width="220" height="60" rx="10" fill="#1B2E1F"/>
+  <rect x="40" y="432" width="20" height="20" rx="5" fill="#1DB954" opacity="0.7"/>
+  <rect x="68" y="434" width="100" height="10" rx="3" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="68" y="450" width="140" height="8" rx="3" fill="#6EBF8B" opacity="0.35"/>
+
+  <rect x="266" y="420" width="220" height="60" rx="10" fill="#1B2E1F"/>
+  <rect x="278" y="432" width="20" height="20" rx="5" fill="#1DB954" opacity="0.7"/>
+  <rect x="306" y="434" width="100" height="10" rx="3" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="306" y="450" width="140" height="8" rx="3" fill="#6EBF8B" opacity="0.35"/>
+
+  <rect x="504" y="420" width="220" height="60" rx="10" fill="#1B2E1F"/>
+  <rect x="516" y="432" width="20" height="20" rx="5" fill="#1DB954" opacity="0.7"/>
+  <rect x="544" y="434" width="100" height="10" rx="3" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="544" y="450" width="140" height="8" rx="3" fill="#6EBF8B" opacity="0.35"/>
+
+  <!-- Glow effect -->
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#1DB954" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#1DB954" stop-opacity="0"/>
+  </radialGradient>
+  <ellipse cx="400" cy="250" rx="400" ry="250" fill="url(#glow)"/>
+</svg>

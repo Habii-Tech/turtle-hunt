@@ -19,7 +19,7 @@ document.getElementById('slides-container').insertAdjacentHTML('beforeend', `
     <div style="border-right:1px solid rgba(255,255,255,.07);padding:48px 44px 48px 52px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:5;">
       <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1DB954;margin-bottom:16px;">Nosso diferencial</div>
       <h2 style="font-size:clamp(38px,4vw,56px);font-weight:900;line-height:1.0;letter-spacing:-.035em;color:#fff;margin:0 0 22px;">Por que a<br><em style="color:rgba(29,185,84,.45);font-style:normal;">Habii Tech?</em></h2>
-      <p style="font-size:16px;color:rgba(255,255,255,.55);line-height:1.72;margin:0 0 36px;max-width:320px;">Escolher a empresa certa é tão importante quanto a ideia em si. Veja o que nos torna a parceira ideal para construir o futuro digital do Fazendinhas.</p>
+      <p style="font-size:16px;color:rgba(255,255,255,.55);line-height:1.72;margin:0 0 36px;max-width:320px;">Escolher a empresa certa é tão importante quanto a ideia em si. Veja o que nos torna a parceira ideal para construir o futuro digital do Turtle Hunt.</p>
 
       <!-- highlight stat -->
       <div style="background:rgba(29,185,84,.08);border:1px solid rgba(29,185,84,.2);border-radius:16px;padding:20px 24px;display:flex;align-items:center;gap:16px;">
@@ -64,7 +64,7 @@ document.getElementById('slides-container').insertAdjacentHTML('beforeend', `
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
         </div>
         <div style="font-size:15px;font-weight:700;color:#fff;letter-spacing:-.01em;line-height:1.3;">Design e usabilidade a sério</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.62;">Interface projetada para quem vai usar, não só para parecer bonito. Fluxos intuitivos que moradores e porteiros adotam sem treinamento.</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.62;">Interface projetada para quem vai usar, não só para parecer bonito. Fluxos intuitivos que corredores adotam naturalmente, sem curva de aprendizado.</div>
       </div>
 
       <!-- Card 5 — Equipe própria -->

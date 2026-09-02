@@ -1,60 +1,69 @@
 document.getElementById('slides-container').insertAdjacentHTML('beforeend', `
 <!-- S4b — MOCKUP / SOLUÇÃO VISUAL -->
-<section class="slide w-full min-h-screen relative overflow-hidden flex flex-col bg-white" id="s4b" data-i="6">
+<section class="slide w-full min-h-screen relative overflow-hidden flex flex-col" id="s4b" data-i="6" style="background:#111A12;">
+  <!-- Grid -->
+  <div class="bg-grid" style="opacity:.4;"></div>
+  <!-- Glow esquerdo -->
+  <div class="absolute left-0 top-0 w-[50%] h-full pointer-events-none" style="background:radial-gradient(ellipse 70% 60% at 5% 50%, rgba(29,185,84,.06) 0%, transparent 70%);"></div>
+  <!-- Glow direito — musgo do app -->
+  <div class="absolute right-0 top-0 w-[60%] h-full pointer-events-none" style="background:radial-gradient(ellipse 80% 90% at 90% 55%, rgba(38,60,30,.70) 0%, rgba(20,35,18,.35) 55%, transparent 80%);"></div>
+
+  <!-- bar -->
   <div class="absolute top-0 left-0 right-0 h-[72px] flex items-center justify-between px-[34px] z-10 overflow-visible">
-    <img src="assets/images/logotipo_branco.png" alt="Habii.tech" style="height:150px;width:auto;display:block;padding-left:0;">
-    <span class="text-[11px] font-bold tracking-[.1em] uppercase text-[#8FA398]">A solução · Fazendinhas</span>
+    <img src="assets/images/logo.png" alt="Habii.tech" style="height:28px;width:auto;display:block;margin-left:30px">
+    <span class="text-[11px] font-bold tracking-[.1em] uppercase" style="color:rgba(255,255,255,.25);">A solução · Turtle Hunt</span>
   </div>
-  <div class="flex-1 grid grid-cols-2 gap-0 pt-20 overflow-hidden">
-    <!-- left -->
-    <div class="s4b-left px-14 py-12 flex flex-col justify-center border-r border-[#DDE8E2]">
-      <div class="text-[11px] font-bold tracking-[.1em] uppercase text-[#158A3E] mb-[14px]">Prévia do produto</div>
-      <h2 class="text-[clamp(36px,4vw,54px)] font-black leading-none tracking-[-0.03em] text-[#0C1410] mb-5">A solução<br><em class="text-[#6EBF8B] not-italic">em suas mãos.</em></h2>
-      <p class="text-[16px] text-[#5C6E64] leading-[1.78] mb-[18px]">Interface limpa e intuitiva, projetada para o dia a dia do morador. Todas as funcionalidades do condomínio a um toque de distância.</p>
-      <div class="flex flex-col gap-3 mt-7">
-        <div class="s4b-feature flex items-center gap-[14px] px-[18px] py-[14px] bg-[#F0FDF4] border border-[#BBF7D0] rounded-[14px]">
-          <div class="w-[38px] h-[38px] flex-shrink-0 bg-gradient-to-br from-[#4CAF50] to-[#1B5E20] rounded-[10px] flex items-center justify-center shadow-[0_4px_12px_rgba(27,94,32,.25)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+
+  <div class="flex-1 grid grid-cols-2 gap-0 pt-[60px] pb-4 overflow-hidden">
+    <!-- left — texto -->
+    <div class="s4b-left px-14 py-10 flex flex-col justify-center" style="border-right:1px solid rgba(255,255,255,.07);">
+      <div class="text-[11px] font-bold tracking-[.1em] uppercase mb-[14px]" style="color:#1DB954;">Prévia do produto</div>
+      <h2 class="font-black leading-none tracking-[-0.03em] text-white mb-5" style="font-size:clamp(34px,3.8vw,52px);">
+        A solução<br><em class="not-italic" style="color:#6EBF8B;">em suas mãos.</em>
+      </h2>
+      <p class="leading-[1.78] mb-[18px]" style="font-size:15px; color:rgba(255,255,255,.45); max-width:400px;">
+        Uma experiência pós-corrida que transforma dados brutos em narrativa significativa. O corredor recebe não apenas métricas — recebe uma história sobre quem está se tornando.
+      </p>
+      <div class="flex flex-col gap-[10px] mt-5">
+        <div class="s4b-feature flex items-center gap-[14px] px-[16px] py-[13px] rounded-[14px]" style="background:rgba(110,191,139,.07); border:1px solid rgba(110,191,139,.15);">
+          <div class="w-[36px] h-[36px] flex-shrink-0 rounded-[10px] flex items-center justify-center" style="background:linear-gradient(135deg,#4CAF50,#1B5E20); box-shadow:0 4px 12px rgba(27,94,32,.35);">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
           <div>
-            <div class="text-[13px] font-bold text-[#1B5E20]">Encomendas & Visitantes</div>
-            <div class="text-[11.5px] text-[#5C6E64] mt-[2px] leading-[1.4]">Notificações instantâneas e controle de acesso</div>
+            <div class="text-[13px] font-bold" style="color:#A8D5B8;">Motor de Interpretação</div>
+            <div class="leading-[1.4] mt-[2px]" style="font-size:11.5px; color:rgba(255,255,255,.38);">Analisa splits e transforma padrões em conceitos semânticos explicáveis</div>
           </div>
         </div>
-        <div class="s4b-feature flex items-center gap-[14px] px-[18px] py-[14px] bg-[#F0FDF4] border border-[#BBF7D0] rounded-[14px]">
-          <div class="w-[38px] h-[38px] flex-shrink-0 bg-gradient-to-br from-[#4CAF50] to-[#1B5E20] rounded-[10px] flex items-center justify-center shadow-[0_4px_12px_rgba(27,94,32,.25)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <div class="s4b-feature flex items-center gap-[14px] px-[16px] py-[13px] rounded-[14px]" style="background:rgba(110,191,139,.07); border:1px solid rgba(110,191,139,.15);">
+          <div class="w-[36px] h-[36px] flex-shrink-0 rounded-[10px] flex items-center justify-center" style="background:linear-gradient(135deg,#4CAF50,#1B5E20); box-shadow:0 4px 12px rgba(27,94,32,.35);">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <div>
-            <div class="text-[13px] font-bold text-[#1B5E20]">Liberações & Prestadores</div>
-            <div class="text-[11.5px] text-[#5C6E64] mt-[2px] leading-[1.4]">Autorize acessos diretamente pelo app</div>
+            <div class="text-[13px] font-bold" style="color:#A8D5B8;">Narrativa com Otto, Lyz e Marvin</div>
+            <div class="leading-[1.4] mt-[2px]" style="font-size:11.5px; color:rgba(255,255,255,.38);">Três perspectivas únicas transformam dados em história e vínculo emocional</div>
           </div>
         </div>
-        <div class="s4b-feature flex items-center gap-[14px] px-[18px] py-[14px] bg-[#F0FDF4] border border-[#BBF7D0] rounded-[14px]">
-          <div class="w-[38px] h-[38px] flex-shrink-0 bg-gradient-to-br from-[#4CAF50] to-[#1B5E20] rounded-[10px] flex items-center justify-center shadow-[0_4px_12px_rgba(27,94,32,.25)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="s4b-feature flex items-center gap-[14px] px-[16px] py-[13px] rounded-[14px]" style="background:rgba(110,191,139,.07); border:1px solid rgba(110,191,139,.15);">
+          <div class="w-[36px] h-[36px] flex-shrink-0 rounded-[10px] flex items-center justify-center" style="background:linear-gradient(135deg,#4CAF50,#1B5E20); box-shadow:0 4px 12px rgba(27,94,32,.35);">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <div>
-            <div class="text-[13px] font-bold text-[#1B5E20]">Ocorrências</div>
-            <div class="text-[11.5px] text-[#5C6E64] mt-[2px] leading-[1.4]">Registre e acompanhe problemas em tempo real</div>
+            <div class="text-[13px] font-bold" style="color:#A8D5B8;">Hunt Record</div>
+            <div class="leading-[1.4] mt-[2px]" style="font-size:11.5px; color:rgba(255,255,255,.38);">Registro colecionável e compartilhável: uma memória, não um relatório</div>
           </div>
         </div>
       </div>
-      <a href="https://www.figma.com/design/jZFwJeWhH715IeENnAIKQr/Untitled?node-id=0-1&t=zHp4k6oz3RYohRYq-1" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center gap-[10px] px-5 py-[13px] rounded-[14px] border border-[#DDE8E2] bg-white hover:bg-[#F0FDF4] hover:border-[#BBF7D0] transition-colors w-fit group">
-        <svg width="18" height="18" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5Z" fill="#1ABCFE"/>
-          <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5A9.5 9.5 0 0 1 0 47.5Z" fill="#0ACF83"/>
-          <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#FF7262"/>
-          <path d="M0 9.5a9.5 9.5 0 0 0 9.5 9.5H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#F24E1E"/>
-          <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#FF7262"/>
-        </svg>
-        <span class="text-[13px] font-semibold text-[#374840] group-hover:text-[#158A3E] transition-colors">Ver protótipo no Figma</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#8FA398] group-hover:text-[#158A3E] transition-colors"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
     </div>
-    <!-- right -->
-    <div class="s4b-right flex items-center justify-center relative overflow-hidden" style="background:linear-gradient(160deg,#F0FDF4 0%,#DCFCE7 100%);">
-      <img src="assets/images/mockup_fazendinhas.png" alt="Mockup do App Fazendinhas" class="relative z-[1] w-auto object-contain block" style="max-height:78vh;filter:drop-shadow(0 32px 64px rgba(27,94,32,.22));">
+
+    <!-- right — mockup real -->
+    <div class="s4b-right flex items-center justify-center relative overflow-hidden">
+      <!-- halo atrás da imagem -->
+      <div style="position:absolute; width:420px; height:420px; border-radius:50%; background:radial-gradient(ellipse at center, rgba(40,70,32,.55) 0%, transparent 70%); filter:blur(40px); pointer-events:none;"></div>
+      <img
+        src="assets/images/tutle_solucao.png"
+        alt="Turtle Hunt — telas do app"
+        style="position:relative; z-index:1; max-height:86%; max-width:80%; width:auto; object-fit:contain; filter:drop-shadow(0 24px 56px rgba(0,0,0,.65)) drop-shadow(0 0 1px rgba(255,255,255,.04));"
+      >
     </div>
   </div>
 </section>

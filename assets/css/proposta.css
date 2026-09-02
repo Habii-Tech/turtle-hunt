@@ -117,6 +117,18 @@ html { scroll-snap-type: y mandatory; scroll-behavior: smooth; overflow-y: scrol
     display: none !important;
   }
 
+  /* ── Portfolio: o carrossel é substituído por um slide estático por case ──
+     O JS (beforeprint/afterprint em carousel.js) esconde #s9 e injeta
+     #pf-print-pages com um .pf-print-slide por case. */
+  #pf-print-pages {
+    display: block;
+  }
+  /* Garante quebra de página após o último case (não deixar s3 colar) */
+  .pf-print-slide:last-child {
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
   /* ── Remove hover/transitions que não fazem sentido em PDF ── */
   .sc,
   .s4b-feature,

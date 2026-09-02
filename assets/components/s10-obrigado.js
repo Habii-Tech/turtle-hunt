@@ -27,7 +27,7 @@ document.getElementById('slides-container').insertAdjacentHTML('beforeend', `
 
         <p style="font-size:15px;color:rgba(255,255,255,.4);line-height:1.75;max-width:340px;margin-bottom:32px;">
           Agradecemos pelo interesse e esperamos construir uma parceria sólida com o
-          <span style="color:rgba(255,255,255,.68);font-weight:500;">Fazendinhas Belo Vale</span>.
+          <span style="color:rgba(255,255,255,.68);font-weight:500;">Turtle Hunt</span>.
         </p>
 
         <!-- Social links — lista minimalista -->

@@ -143,4 +143,90 @@
     document.getElementById('pf-glow').style.background=CASES[0].glowColor;
     updateDetail(0);
   });
+
+  // ── Impressão / PDF: um slide estático por case ──────────────────────────
+  function buildPrintSlide(c, idx) {
+    var total = '0' + CASES.length;
+    var counter = String(idx + 1).padStart(2, '0') + ' / ' + total;
+
+    var nameContent = c.logo
+      ? '<img src="' + c.logo + '" style="height:' + (c.logoHeight || '72px') + ';width:auto;object-fit:contain;display:block;" alt="' + c.name + '">'
+      : '<span style="font-size:64px;font-weight:900;color:' + c.color + ';letter-spacing:-.035em;line-height:.95;font-style:' + c.nameStyle + ';">' + c.name + '</span>';
+
+    var statContent = c.inProgress
+      ? '<div style="display:flex;align-items:center;"><span style="font-size:10.5px;font-weight:700;padding:6px 12px;border-radius:100px;background:rgba(52,199,89,.08);border:1px solid rgba(52,199,89,.25);color:rgba(52,199,89,.85);letter-spacing:.04em;">' + c.platform + '</span></div>'
+      : '<div style="padding-right:22px;border-right:1px solid rgba(255,255,255,.1);">'
+          + '<div style="font-size:30px;font-weight:900;color:#fff;letter-spacing:-.025em;line-height:1;">' + c.statN + '</div>'
+          + '<div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:6px;font-weight:500;max-width:140px;line-height:1.4;">' + c.statL + '</div>'
+        + '</div>'
+        + '<div style="display:flex;align-items:center;">'
+          + '<span style="font-size:10.5px;font-weight:700;padding:6px 12px;border-radius:100px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.7);letter-spacing:.04em;">' + c.platform + '</span>'
+        + '</div>';
+
+    var visualContent = c.inProgress
+      ? buildInProgressVisual(c)
+      : c.caseImg
+        ? buildCaseImage(c.caseImg)
+        : renderPhones(idx);
+
+    return '<section class="slide pf-print-slide" style="width:100%;position:relative;overflow:hidden;display:flex;flex-direction:column;background:rgb(31,43,35);color:white;" data-print-i="' + idx + '">'
+      + '<div class="pf-bg-grid"></div>'
+      + '<div style="position:absolute;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 54px;z-index:10;">'
+        + '<img src="assets/images/logo.png" alt="Habii.tech" style="height:28px;width:auto;display:block;margin-left:20px">'
+        + '<span style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);">Portfólio · ' + counter + '</span>'
+      + '</div>'
+      + '<div style="position:relative;z-index:5;flex:1;display:flex;flex-direction:column;padding:48px 56px 24px;">'
+        + '<div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:14px;gap:40px;">'
+          + '<div>'
+            + '<div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1DB954;margin-bottom:12px;margin-top:20px;">Cases de sucesso</div>'
+            + '<h2 style="font-size:44px;font-weight:900;line-height:1;letter-spacing:-.03em;color:#fff;margin:0;">Projetos entregues. <em style="color:rgba(29,185,84,.28);font-style:normal;">Clientes satisfeitos.</em></h2>'
+          + '</div>'
+          + '<div style="text-align:right;">'
+            + '<div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px;">Volume &amp; alcance</div>'
+            + '<div style="font-size:13px;color:rgba(255,255,255,.5);max-width:320px;line-height:1.55;"><strong style="color:#fff;font-weight:600;">8 apps em produção</strong>, em 6 segmentos, para clientes no Brasil, EUA e Reino Unido.</div>'
+          + '</div>'
+        + '</div>'
+        + '<div style="position:relative;background:linear-gradient(135deg,rgba(255,255,255,.043) 0%,rgba(255,255,255,.016) 100%);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:36px 40px;flex:1;min-height:0;overflow:hidden;display:flex;">'
+          + '<div style="position:absolute;left:-8%;bottom:-30%;width:50%;height:120%;border-radius:50%;background:' + c.glowColor + ';opacity:0.09;pointer-events:none;"></div>'
+          + '<div style="position:relative;z-index:5;width:420px;display:flex;flex-direction:column;flex-shrink:0;">'
+            + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">'
+              + '<span style="display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:100px;background:rgba(29,185,84,.12);border:1px solid rgba(29,185,84,.25);">'
+                + '<span style="width:5px;height:5px;border-radius:50%;background:#1DB954;"></span>'
+                + '<span style="font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1DB954;">Em destaque</span>'
+              + '</span>'
+              + '<span style="width:14px;height:1px;background:rgba(255,255,255,.18);"></span>'
+              + '<span style="font-size:10px;font-weight:600;letter-spacing:.08em;color:rgba(255,255,255,.5);">' + counter + '</span>'
+            + '</div>'
+            + '<div style="margin-bottom:8px;">' + nameContent + '</div>'
+            + '<div style="font-size:14px;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:22px;letter-spacing:.02em;">' + c.segment + ' · ' + c.country + '</div>'
+            + '<div style="font-size:17px;line-height:1.55;color:rgba(255,255,255,.82);font-weight:400;margin-bottom:22px;max-width:380px;">' + c.desc + '</div>'
+            + '<div style="display:flex;gap:22px;align-items:stretch;">' + statContent + '</div>'
+          + '</div>'
+          + '<div style="position:relative;flex:1;min-width:0;">' + visualContent + '</div>'
+        + '</div>'
+      + '</div>'
+    + '</section>';
+  }
+
+  var _printContainer = null;
+
+  window.addEventListener('beforeprint', function () {
+    if (_printContainer) return;
+    var s9 = document.getElementById('s9');
+    _printContainer = document.createElement('div');
+    _printContainer.id = 'pf-print-pages';
+    CASES.forEach(function (c, i) {
+      _printContainer.insertAdjacentHTML('beforeend', buildPrintSlide(c, i));
+    });
+    s9.insertAdjacentElement('afterend', _printContainer);
+    s9.style.setProperty('display', 'none', 'important');
+  });
+
+  window.addEventListener('afterprint', function () {
+    if (!_printContainer) return;
+    var s9 = document.getElementById('s9');
+    _printContainer.remove();
+    _printContainer = null;
+    s9.style.removeProperty('display');
+  });
 })();
