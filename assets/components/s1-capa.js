@@ -33,12 +33,6 @@ document.getElementById('slides-container').insertAdjacentHTML('beforeend', `
       <p class="leading-[1.72] max-w-[460px] mb-[52px]" style="font-size:17px; color:rgba(255,255,255,.42);">
         Desenvolvimento de <strong style="color:rgba(255,255,255,.72); font-weight:600;">aplicativo mobile + painel administrativo web</strong> para o <strong style="color:rgba(255,255,255,.72); font-weight:600;">Turtle Hunt, em Curitiba/PR</strong>
       </p>
-      <!-- chips de tech -->
-      <div class="flex items-center gap-3 flex-wrap">
-        <span class="text-[11px] font-semibold px-3 py-1 rounded-full" style="background:rgba(255,255,255,.06); color:rgba(255,255,255,.45); border:1px solid rgba(255,255,255,.08);">React Native</span>
-        <span class="text-[11px] font-semibold px-3 py-1 rounded-full" style="background:rgba(255,255,255,.06); color:rgba(255,255,255,.45); border:1px solid rgba(255,255,255,.08);">Next.js</span>
-        <span class="text-[11px] font-semibold px-3 py-1 rounded-full" style="background:rgba(255,255,255,.06); color:rgba(255,255,255,.45); border:1px solid rgba(255,255,255,.08);">Node.js</span>
-      </div>
     </div>
 
     <!-- Coluna direita — mockup real -->
